@@ -1,0 +1,121 @@
+:root {
+  --ink: #0c1215;
+  --paper: #f4f0e7;
+  --paper-deep: #e8e0d1;
+  --teal: #00a59a;
+  --teal-dark: #006f69;
+  --white: #fff;
+  --muted: #566167;
+  --line: rgba(12, 18, 21, 0.16);
+  --max: 1160px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.65;
+}
+
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
+
+.wrap { width: min(calc(100% - 40px), var(--max)); margin-inline: auto; }
+.narrow { max-width: 760px; }
+
+.nav {
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand { font-size: 1.25rem; font-weight: 900; letter-spacing: 0.16em; text-decoration: none; }
+.brand span { color: var(--teal-dark); }
+.nav-links { display: flex; align-items: center; gap: 22px; font-size: 0.92rem; }
+.nav-links a { text-decoration: none; }
+
+.hero, .page-hero { padding: 110px 0 120px; }
+.hero { min-height: 72vh; display: flex; flex-direction: column; justify-content: center; }
+
+.eyebrow {
+  margin: 0 0 18px;
+  color: var(--teal-dark);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+h1, h2, h3 { margin-top: 0; line-height: 1.08; letter-spacing: -0.035em; }
+h1 { max-width: 980px; margin-bottom: 28px; font-size: clamp(3rem, 8vw, 7rem); }
+.page-hero h1 { font-size: clamp(2.8rem, 6.5vw, 5.5rem); }
+h2 { font-size: clamp(2rem, 4vw, 3.7rem); }
+h3 { font-size: 1.35rem; }
+
+.lede { max-width: 790px; margin: 0 0 34px; color: #2f393e; font-size: clamp(1.15rem, 2vw, 1.45rem); }
+.actions { display: flex; align-items: center; flex-wrap: wrap; gap: 22px; }
+
+.button {
+  display: inline-block;
+  padding: 13px 19px;
+  color: var(--white);
+  background: var(--ink);
+  border: 1px solid var(--ink);
+  border-radius: 4px;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.button:hover, .button:focus-visible { color: var(--ink); background: transparent; }
+.button.small { min-height: 44px; display: inline-flex; align-items: center; padding: 9px 13px; font-size: 0.86rem; }
+.text-link { font-weight: 700; }
+
+.section { padding: 100px 0; border-top: 1px solid var(--line); }
+.section.dark { color: var(--white); background: var(--ink); }
+.section.dark .eyebrow { color: #45d3c8; }
+.section.muted { background: var(--paper-deep); }
+
+.grid { display: grid; gap: 18px; margin-top: 42px; }
+.grid.three { grid-template-columns: repeat(3, 1fr); }
+.card { min-height: 270px; padding: 28px; background: rgba(255, 255, 255, 0.44); border: 1px solid var(--line); }
+.number { color: var(--teal-dark); font-size: 0.8rem; font-weight: 800; }
+
+.split { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: clamp(40px, 8vw, 120px); align-items: start; }
+.prose { font-size: 1.08rem; }
+.prose.wide { max-width: 860px; }
+.prose h2 { margin-top: 62px; font-size: clamp(1.7rem, 3vw, 2.5rem); }
+.prose h2:first-child { margin-top: 0; }
+.prose p, .prose li { color: #354046; }
+
+.notice { padding: 30px; background: var(--ink); color: var(--white); }
+.notice h2 { font-size: 1.8rem; }
+.notice li { margin-bottom: 10px; }
+
+.footer { padding: 34px 0; border-top: 1px solid var(--line); }
+.footer-row { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.footer p { margin: 0; color: var(--muted); font-size: 0.88rem; }
+
+.not-found { min-height: 100vh; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
+.not-found h1 { font-size: clamp(2.5rem, 7vw, 5rem); }
+
+@media (max-width: 760px) {
+  .nav { align-items: center; flex-wrap: wrap; padding: 22px 0; }
+  .nav-links { width: 100%; flex-wrap: wrap; gap: 14px; }
+  h1 { font-size: clamp(2.8rem, 12vw, 3rem); }
+  .hero, .page-hero { padding: 82px 0 90px; }
+  .grid.three, .split { grid-template-columns: 1fr; }
+  .card { min-height: 0; }
+  .section { padding: 76px 0; }
+  .footer-row { align-items: flex-start; flex-direction: column; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
