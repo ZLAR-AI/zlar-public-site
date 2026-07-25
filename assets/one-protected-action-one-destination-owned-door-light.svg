@@ -86,8 +86,8 @@
       <circle cx="24" cy="16" r="2.5" fill="#1769E0" stroke="none"/>
       <path d="M19 39h42M19 52h27"/>
     </g>
-    <text x="215" y="587" fill="var(--ink)" font-size="20" font-weight="800" text-anchor="start"><tspan x="215" dy="0">APPLICATION OR WORKFLOW</tspan></text>
-    <text x="215" y="620" fill="var(--soft)" font-size="19" font-weight="500" text-anchor="start"><tspan x="215" dy="0">Legitimate access or identity</tspan></text>
+    <text x="215" y="574" fill="var(--ink)" font-size="20" font-weight="800" text-anchor="start"><tspan x="215" dy="0">APPLICATION OR</tspan><tspan x="215" dy="25">WORKFLOW</tspan></text>
+    <text x="215" y="633" fill="var(--soft)" font-size="19" font-weight="500" text-anchor="start"><tspan x="215" dy="0">Legitimate access or identity</tspan></text>
     <g filter="url(#shadow)">
       <rect x="70" y="704" width="430" height="136" rx="20" fill="var(--paper)" stroke="#E5A000" stroke-width="2.5"/>
       <rect x="70" y="704" width="10" height="136" rx="5" fill="#E5A000"/>
@@ -99,8 +99,8 @@
       <path d="M10 55c3-9 21-9 24 0M44 25h21M44 38h15"/>
       <path d="M61 49l16 27M77 49L61 76" stroke-width="6"/>
     </g>
-    <text x="215" y="755" fill="var(--ink)" font-size="20" font-weight="800" text-anchor="start"><tspan x="215" dy="0">COMPROMISED CREDENTIAL</tspan></text>
-    <text x="215" y="788" fill="var(--soft)" font-size="19" font-weight="500" text-anchor="start"><tspan x="215" dy="0">A valid session is not authority</tspan></text>
+    <text x="215" y="742" fill="var(--ink)" font-size="20" font-weight="800" text-anchor="start"><tspan x="215" dy="0">COMPROMISED</tspan><tspan x="215" dy="25">CREDENTIAL</tspan></text>
+    <text x="215" y="801" fill="var(--soft)" font-size="19" font-weight="500" text-anchor="start"><tspan x="215" dy="0">A valid session is not authority</tspan></text>
   <path d="M500 268 H585 Q625 268 655 372 H735" fill="none" stroke="#1769E0" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow-blue)" opacity="0.72"/><path d="M500 436 H585 Q625 436 655 468 H735" fill="none" stroke="#1769E0" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow-blue)" opacity="0.72"/><path d="M500 604 H585 Q625 604 655 564 H735" fill="none" stroke="#1769E0" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow-blue)" opacity="0.72"/><path d="M500 772 H585 Q625 772 655 660 H735" fill="none" stroke="#1769E0" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow-blue)" opacity="0.72"/>
 
   <g filter="url(#shadow)">
@@ -116,12 +116,12 @@
   <text x="985" y="533" fill="#334155" font-size="22" font-weight="600" text-anchor="middle"><tspan x="985" dy="0">verifies before consequence</tspan></text>
   <rect x="810" y="575" width="350" height="52" rx="12" fill="#00A6B8" opacity="0.14" stroke="#00A6B8" stroke-width="2"/>
   <text x="985" y="609" fill="#00A6B8" font-size="19" font-weight="850" text-anchor="middle"><tspan x="985" dy="0">EXACT PROTECTED ACTION</tspan></text>
-  <circle cx="832" cy="673" r="6" fill="#00A6B8"/>
-  <text x="855" y="681" fill="#0B132B" font-size="22" font-weight="650" text-anchor="start" direction="ltr" style="text-align:left"><tspan x="855" dy="0">Recognized authorization</tspan></text>
-  <circle cx="832" cy="721" r="6" fill="#00A6B8"/>
-  <text x="855" y="729" fill="#0B132B" font-size="22" font-weight="650" text-anchor="start" direction="ltr" style="text-align:left"><tspan x="855" dy="0">Valid for this destination and moment</tspan></text>
-  <circle cx="832" cy="769" r="6" fill="#00A6B8"/>
-  <text x="855" y="777" fill="#0B132B" font-size="22" font-weight="650" text-anchor="start" direction="ltr" style="text-align:left"><tspan x="855" dy="0">Bound to the action that will execute</tspan></text>
+  <circle cx="787" cy="673" r="6" fill="#00A6B8"/>
+  <text x="810" y="681" fill="#0B132B" font-size="22" font-weight="650" text-anchor="start" direction="ltr" style="text-align:left"><tspan x="810" dy="0">Recognized authorization</tspan></text>
+  <circle cx="787" cy="721" r="6" fill="#00A6B8"/>
+  <text x="810" y="729" fill="#0B132B" font-size="22" font-weight="650" text-anchor="start" direction="ltr" style="text-align:left"><tspan x="810" dy="0">Valid for this destination and moment</tspan></text>
+  <circle cx="787" cy="769" r="6" fill="#00A6B8"/>
+  <text x="810" y="777" fill="#0B132B" font-size="22" font-weight="650" text-anchor="start" direction="ltr" style="text-align:left"><tspan x="810" dy="0">Bound to the action that will execute</tspan></text>
 
   <path d="M1235 405H1355" fill="none" stroke="#2EA30C" stroke-width="7" stroke-linecap="round" marker-end="url(#arrow-green)"/>
   <path d="M1235 675H1355" fill="none" stroke="#F22B1D" stroke-width="7" stroke-linecap="round" marker-end="url(#arrow-red)"/>
