@@ -60,6 +60,14 @@ h2 { font-size: clamp(2rem, 4vw, 3.7rem); }
 h3 { font-size: 1.35rem; }
 
 .lede { max-width: 790px; margin: 0 0 34px; color: #2f393e; font-size: clamp(1.15rem, 2vw, 1.45rem); }
+.hero-copy { margin-bottom: 18px; }
+.hero-evidence {
+  max-width: 790px;
+  margin: 0 0 34px;
+  color: var(--teal-dark);
+  font-size: clamp(1.05rem, 1.6vw, 1.22rem);
+  font-weight: 800;
+}
 .actions { display: flex; align-items: center; flex-wrap: wrap; gap: 22px; }
 
 .button {
