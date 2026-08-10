@@ -3,118 +3,108 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ZLAR — Agent Control Plane</title>
-  <meta name="description" content="Agent Control Plane: decide what AI agents may do before they act. Set limits, require human approval, and verify permission before governed actions go through.">
+  <title>ZLAR — Authority Before Autonomous Action</title>
+  <meta name="description" content="ZLAR is building the authority layer for autonomous action: recognized authority before effect, with verifiable evidence of what counted.">
   <meta name="robots" content="index,follow,noarchive">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'none'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
-  <meta property="og:title" content="ZLAR — Agent Control Plane">
-  <meta property="og:description" content="Decide what AI agents may do before they act. Every governed decision leaves a receipt.">
+  <meta property="og:title" content="ZLAR — Authority Before Autonomous Action">
+  <meta property="og:description" content="Autonomous AI will not scale on trust. It will scale on authority.">
   <meta property="og:image" content="https://zlar.ai/assets/social-preview.png">
   <meta property="og:url" content="https://zlar.ai/">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@ZLAR_AI">
   <meta name="twitter:creator" content="@ZLAR_AI">
-  <meta name="twitter:title" content="ZLAR — Agent Control Plane">
-  <meta name="twitter:description" content="Decide what AI agents may do before they act. Every governed decision leaves a receipt.">
+  <meta name="twitter:title" content="ZLAR — Authority Before Autonomous Action">
+  <meta name="twitter:description" content="Autonomous AI will not scale on trust. It will scale on authority.">
   <meta name="twitter:image" content="https://zlar.ai/assets/social-preview.png">
+  <link rel="icon" href="assets/social-preview.png">
   <link rel="stylesheet" href="zlar.css">
 </head>
-<body>
-  <nav class="nav wrap" aria-label="Primary navigation">
-    <a class="brand" href="/">ZL<span>A</span>R</a>
-    <div class="nav-links">
-      <a href="#how">How it works</a>
-      <a href="#boundary">Boundary</a>
-      <a href="privacy.html">Privacy</a>
-      <a class="button small" href="contact.html">Contact</a>
+<body class="home-redesign">
+  <nav class="founder-nav founder-wrap" aria-label="Primary navigation">
+    <a class="founder-brand" href="/" aria-label="ZLAR home">ZLAR</a>
+    <div class="founder-nav-links">
+      <a href="#thesis">Thesis</a>
+      <a href="#hiring">We’re hiring</a>
+      <a href="contact.html">Contact</a>
     </div>
   </nav>
 
   <main>
-    <header class="hero wrap">
-      <p class="eyebrow">Agent Control Plane</p>
-      <h1>Decide what AI agents may do before they act.</h1>
-      <p class="lede hero-copy">
-        ZLAR is building the control plane that lets companies set clear limits,
-        require human approval when needed, and make every governed action prove
-        it has permission before it goes through.
-      </p>
-      <p class="hero-evidence">Every governed decision leaves a receipt.</p>
-      <div class="actions">
-        <a class="button" href="contact.html">Contact</a>
-        <a class="text-link" href="#how">Understand the boundary</a>
+    <header class="founder-hero founder-wrap" id="thesis">
+      <p class="founder-eyebrow">The authority layer for autonomous action</p>
+      <h1>Autonomous AI will not scale on trust. <br>It will scale on authority.</h1>
+      <p class="founder-support">ZLAR is building that authority layer.</p>
+      <div class="founder-actions" aria-label="Homepage actions">
+        <a class="founder-button founder-button-primary" href="contact.html">Talk to ZLAR</a>
+        <a class="founder-button founder-button-secondary" href="#hiring">Build with us</a>
       </div>
     </header>
 
-    <section class="section" id="how">
-      <div class="wrap">
-        <p class="eyebrow">The governance moment</p>
-        <h2>Authority belongs where action becomes consequence.</h2>
-        <div class="grid three">
-          <article class="card">
-            <p class="number">01</p>
-            <h3>The action arrives</h3>
-            <p>A defined machine action reaches the boundary before it changes the world.</p>
-          </article>
-          <article class="card">
-            <p class="number">02</p>
-            <h3>Authority decides</h3>
-            <p>The institution's rule determines whether the action may proceed, must stop, or requires an accountable person.</p>
-          </article>
-          <article class="card">
-            <p class="number">03</p>
-            <h3>Evidence remains</h3>
-            <p>The governed decision leaves a receipt showing what counted as authorized action at that boundary.</p>
-          </article>
+    <section class="founder-vision founder-wrap" aria-labelledby="vision-title">
+      <p class="founder-section-label">Founder vision</p>
+      <h2 id="vision-title">
+        Use any intelligence. Use any runtime. Use any model.<br>
+        But when an action attempts to become consequence,<br>
+        <em>it must ZLAR.</em>
+      </h2>
+      <p class="founder-definition">
+        To ZLAR an action is to require recognized authority before effect—and
+        leave verifiable evidence of what counted.
+      </p>
+    </section>
+
+    <section class="founder-threshold founder-wrap" aria-labelledby="threshold-caption">
+      <figure class="threshold-figure">
+        <div class="threshold-scene" aria-hidden="true">
+          <div class="threshold-intelligence">
+            <span>Intelligence</span>
+          </div>
+          <div class="threshold-boundary">
+            <span class="threshold-name">ZLAR</span>
+            <strong>Recognized authority</strong>
+          </div>
+          <div class="threshold-consequence">
+            <span>Consequence</span>
+          </div>
         </div>
+        <figcaption id="threshold-caption">
+          Intelligence may propose. Authority decides what becomes real.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="founder-conviction founder-wrap" aria-labelledby="conviction-title">
+      <h2 class="visually-hidden" id="conviction-title">What governance requires</h2>
+      <div class="conviction-lines">
+        <p>Monitoring is not governance.</p>
+        <p>A score is not authority.</p>
+        <p>AI inside enforcement is an attack surface disguised as a feature.</p>
+        <p>Governance stops the action before it becomes real.</p>
       </div>
     </section>
 
-    <section class="section dark" id="boundary">
-      <div class="wrap split">
-        <div>
-          <p class="eyebrow">The boundary</p>
-          <h2>ZLAR governs defined routed actions.</h2>
-        </div>
-        <div class="prose">
-          <p>
-            ZLAR does not govern thought, model output, or every path through a
-            machine. Governance exists only where a named action is routed
-            through the defined boundary.
-          </p>
-          <p>
-            Monitoring after an action is not authority. A score is not
-            permission. Human accountability becomes structural when the action
-            can stop before effect and the decision can be verified afterward.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap split">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2>Contact us.</h2>
-        </div>
-        <div class="prose">
-          <p>
-            If ZLAR is relevant to something you are building, governing,
-            protecting, or trying to understand, say hello. No prepared brief is
-            required.
-          </p>
-          <a class="button" href="contact.html">Say hello</a>
-        </div>
+    <section class="founder-hiring founder-wrap" id="hiring" aria-labelledby="hiring-title">
+      <p class="founder-section-label">We’re hiring</p>
+      <h2 id="hiring-title">If you want to build the authority layer beneath machine civilization, reach out.</h2>
+      <div class="founder-actions">
+        <a class="founder-button founder-button-primary" href="contact.html">Build with us</a>
+        <a class="founder-button founder-button-secondary" href="contact.html">Talk to ZLAR</a>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="wrap footer-row">
-      <p>&copy; 2026 ZLAR Inc. &middot; Agent Control Plane</p>
-      <p><a href="privacy.html">Privacy</a> &middot; <a href="legal.html">Legal</a> &middot; <a href="contact.html">Contact</a></p>
-    </div>
+  <footer class="founder-footer founder-wrap">
+    <p>
+      <span>ZLAR INC.</span>
+      <span aria-hidden="true">·</span>
+      <a href="privacy.html">Privacy</a>
+      <span aria-hidden="true">·</span>
+      <a href="legal.html">Legal</a>
+      <span aria-hidden="true">·</span>
+      <a href="contact.html">Contact</a>
+    </p>
   </footer>
 </body>
 </html>
