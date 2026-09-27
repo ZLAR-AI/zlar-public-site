@@ -7,7 +7,7 @@
   <meta name="description" content="The ZLAR website privacy and analytics boundary.">
   <meta name="robots" content="index,follow,noarchive">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'none'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src https://static.cloudflareinsights.com/beacon.min.js; connect-src https://cloudflareinsights.com; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
   <link rel="stylesheet" href="zlar.css">
 </head>
 <body>
@@ -16,26 +16,39 @@
     <header class="page-hero wrap">
       <p class="eyebrow">Privacy boundary</p>
       <h1>Learn from the site without profiling its visitors.</h1>
-      <p class="lede"><strong>Analytics is not active.</strong> No analytics beacon or visitor event collector is included in this public artifact.</p>
+      <p class="lede"><strong>Cloudflare Web Analytics is active.</strong> It gives ZLAR aggregate traffic and site-performance measurements without identifying or profiling individual visitors.</p>
     </header>
 
     <section class="section">
       <div class="wrap prose wide">
-        <h2>Planned measurement</h2>
+        <h2>What is measured</h2>
         <p>
-          ZLAR intends to use Plausible Analytics only after configuration,
-          retention, processor terms, and an opt-out path are verified. Before
-          activation, this page will state the effective date and final settings.
+          Effective September 27, 2026, ZLAR uses Cloudflare Web Analytics on
+          zlar.ai. The browser loads Cloudflare's analytics beacon and sends
+          measurements to Cloudflare's Web Analytics endpoint.
         </p>
-        <p>The permitted measurement boundary is limited to aggregated site improvement:</p>
+        <p>The measurement boundary is limited to aggregate site improvement:</p>
         <ul>
-          <li>Page views and coarse visit counts.</li>
-          <li>Referrer and non-personal campaign codes.</li>
-          <li>Coarse country, browser, and device categories.</li>
-          <li>Engagement-time buckets and scroll thresholds.</li>
-          <li>Contact, outbound-link, and download-link clicks.</li>
-          <li>Copy or share events identified only by public page section, never by copied text or destination.</li>
+          <li>Page views and aggregate visit counts.</li>
+          <li>Page path and referring website.</li>
+          <li>Country, browser, operating-system, and device categories.</li>
+          <li>Page-load timing and Core Web Vitals.</li>
         </ul>
+
+        <h2>How privacy is protected</h2>
+        <p>
+          Cloudflare states that Web Analytics does not collect or use visitors'
+          personal data. It does not use cookies or local storage for analytics,
+          does not fingerprint individuals, does not track people across sites,
+          and does not record URL query strings. ZLAR receives aggregate reports,
+          not a list of identifiable visitors.
+        </p>
+        <p>
+          Cloudflare retains unsampled beacon data for seven days, then stores a
+          sampled aggregate. The dashboard makes up to six months of analytics
+          available. ZLAR does not export raw visitor events or build person-level
+          profiles from this data.
+        </p>
 
         <h2>Permanent refusals</h2>
         <p>ZLAR will not use website analytics to collect or derive:</p>
@@ -48,7 +61,7 @@
 
         <h2>AI-use boundary</h2>
         <p>
-          Future AI analysis may use aggregated counts and trends only. Raw
+          AI analysis may use aggregated counts and trends only. Raw
           visitor events, provider credentials, free text, and person-level
           profiles are outside the permitted AI input boundary. Any expansion
           requires a new public notice and a separate authorization decision.
@@ -64,5 +77,6 @@
     </section>
   </main>
   <footer class="footer"><div class="wrap footer-row"><p>&copy; 2026 ZLAR Inc. &middot; Agent Control Plane</p><p><a href="/">Home</a> &middot; <a href="legal.html">Legal</a> &middot; <a href="contact.html">Contact</a> &middot; <a href="https://github.com/ZLAR-AI/ZLAR">Source</a></p></div></footer>
+  <!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "8e49b7dff236485fb5e998cc1471248d"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
