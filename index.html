@@ -4,20 +4,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ZLAR — Who holds the keys, and for how long?</title>
-  <meta name="description" content="Capable was never supposed to mean allowed. ZLAR builds force fields around the things that matter. They open only when the right people turn their keys, and every opening leaves proof anyone can check.">
-  <meta name="robots" content="index,follow,noarchive">
+  <meta name="description" content="Capable was never supposed to mean allowed. ZLAR is building force fields around the things that matter. They open only when the right people turn their keys, and every opening leaves proof anyone can check.">
+  <meta name="robots" content="index,follow">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="theme-color" content="#fffefa">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src https://static.cloudflareinsights.com/beacon.min.js; connect-src https://cloudflareinsights.com; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
   <meta property="og:title" content="ZLAR — Who holds the keys, and for how long?">
-  <meta property="og:description" content="Capable was never supposed to mean allowed. ZLAR builds force fields around the things that matter. They open only when the right people turn their keys, and every opening leaves proof anyone can check.">
+  <meta property="og:description" content="Capable was never supposed to mean allowed. ZLAR is building force fields around the things that matter. They open only when the right people turn their keys, and every opening leaves proof anyone can check.">
   <meta property="og:image" content="https://zlar.ai/assets/zlar-illustration.jpg">
   <meta property="og:url" content="https://zlar.ai/">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@ZLAR_AI">
   <meta name="twitter:creator" content="@ZLAR_AI">
   <meta name="twitter:title" content="ZLAR — Who holds the keys, and for how long?">
-  <meta name="twitter:description" content="Capable was never supposed to mean allowed. ZLAR builds force fields around the things that matter. They open only when the right people turn their keys, and every opening leaves proof anyone can check.">
+  <meta name="twitter:description" content="Capable was never supposed to mean allowed. ZLAR is building force fields around the things that matter. They open only when the right people turn their keys, and every opening leaves proof anyone can check.">
   <meta name="twitter:image" content="https://zlar.ai/assets/zlar-illustration.jpg">
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
   <link rel="stylesheet" href="/zlar.css">
@@ -37,7 +37,7 @@
         <h1>Capable was never supposed to mean allowed.</h1>
       </div>
       <div class="intro">
-        <p>ZLAR builds force fields around the things that matter. They open only when the right people turn their keys, and every opening leaves proof anyone can check.</p>
+        <p>ZLAR is building force fields around the things that matter. They open only when the right people turn their keys, and every opening leaves proof anyone can check.</p>
         <div class="actions">
           <a class="button primary" href="https://github.com/ZLAR-AI/ZLAR">See the code on GitHub</a>
           <a class="button" href="/contact.html">Say hello</a>
@@ -108,7 +108,16 @@
       <div class="proofs">
         <article class="proof">
           <h3><a href="https://github.com/ZLAR-AI/ZLAR/tree/main/cyan">A test wallet that a stolen key can’t rob.</a></h3>
-          <p>A model wallet in code, not a real bank or blockchain. Anyone can run it.</p>
+          <p>A model wallet in code, not a real bank or blockchain. Here is what happens when you run it:</p>
+          <div class="replay" role="img" aria-label="A replay of the wallet demo. A normal payment settles. A thief with a perfect copy of the owner's key produces half a transaction, which is not a transaction. A copied signature fails. A hijacked AI gets no signature. The money never moved.">
+            <p class="replay-line">The wallet holds <b>$1,000,000</b>. Its rule: every payment needs two signatures, the owner’s and the cosigner’s.</p>
+            <p class="replay-line">A normal payment: $5,000 to a supplier. Both sign. <span class="ok">Settled.</span></p>
+            <p class="replay-line">A thief steals the owner’s key, a perfect copy, and signs a transfer of everything to himself. <span class="no">Not a transaction.</span> Half a cheque.</p>
+            <p class="replay-line">He staples on the cosigner’s signature from the earlier payment. <span class="no">Still not a transaction.</span> That signature was for different words.</p>
+            <p class="replay-line">The attacker takes over the AI itself and tries to stretch its $5,000 approval to $995,000. <span class="no">No signature.</span> An approval is for one exact payment.</p>
+            <p class="replay-line replay-end">The money never moved.</p>
+          </div>
+          <p class="caption">A replay of the demo’s real results. Run it yourself from GitHub.</p>
         </article>
         <article class="proof">
           <h3><a href="https://github.com/ZLAR-AI/ZLAR/tree/main/demos/zlar-destination-gate">One protected action, installed on one real machine.</a></h3>
@@ -120,6 +129,7 @@
         </article>
       </div>
       <p class="github-line">GitHub is the code, the evidence, and the place to build with us.</p>
+      <p class="ai-line">These links lead to code. If you don’t read code, ask your AI to walk you through it. The repository includes a guide written for AI readers.</p>
     </section>
 
     <section class="section split">
@@ -146,6 +156,17 @@
       </div>
     </section>
 
+    <section class="section split">
+      <div>
+        <span class="section-label">For AI readers</span>
+        <h2>Bring your AI.</h2>
+      </div>
+      <div class="copy">
+        <p>This site is written for people and for the AIs that help them. Ask yours to read it, then to read <a href="https://github.com/ZLAR-AI/ZLAR">the repository</a>, starting with <a href="https://github.com/ZLAR-AI/ZLAR/blob/main/AGENTS.md">the guide for AI readers</a>. It will find what works, what doesn’t yet, and the check every proposal should pass. A short summary for AIs is at <a href="/llms.txt">zlar.ai/llms.txt</a>.</p>
+        <p>News and progress: <a href="https://x.com/ZLAR_AI">@ZLAR_AI on X</a>.</p>
+      </div>
+    </section>
+
     <section class="section signature">
       <p>Who holds the keys, and for how long?</p>
     </section>
@@ -154,6 +175,7 @@
     <p class="footer-identity">ZLAR — Who holds the keys, and for how long?</p>
     <nav class="footer-links" aria-label="Footer">
       <a href="https://github.com/ZLAR-AI/ZLAR">GitHub</a><span aria-hidden="true">·</span>
+      <a href="https://x.com/ZLAR_AI">X</a><span aria-hidden="true">·</span>
       <a href="/contact.html">Contact</a><span aria-hidden="true">·</span>
       <a href="/privacy.html">Privacy</a><span aria-hidden="true">·</span>
       <a href="/legal.html">Legal</a><span aria-hidden="true">·</span>

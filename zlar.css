@@ -93,6 +93,7 @@ p { max-width: 44rem; }
 .split { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
 .split h2 { font-size: clamp(3rem, 5vw, 6rem); }
 .split .copy { font-size: clamp(1.25rem, 1.8vw, 1.8rem); line-height: 1.42; }
+.split .copy p + p { margin-top: 1.5rem; }
 
 .signature { padding: clamp(6rem, 12vw, 12rem) 0; }
 .signature p { font-size: clamp(4rem, 9vw, 10rem); line-height: .98; letter-spacing: -.055em; max-width: 15ch; }
@@ -124,6 +125,36 @@ p { max-width: 44rem; }
 .policy ul { margin: 0 0 1.3rem; padding-left: 1.3rem; max-width: 44rem; }
 .policy li + li { margin-top: .5rem; }
 .policy a { overflow-wrap: anywhere; }
+
+.replay {
+  margin: 1.6rem 0 .4rem; padding: clamp(1.2rem, 2.5vw, 2rem);
+  background: #f6f2e8; border: 1px solid var(--line); border-left: 4px solid var(--red);
+  max-width: 52rem;
+}
+.replay .replay-line { font-size: clamp(1.1rem, 1.4vw, 1.3rem); line-height: 1.45; }
+.replay-line + .replay-line { margin-top: .8rem; }
+.replay .ok, .replay .no { font: 700 .95em/1 Arial, Helvetica, sans-serif; letter-spacing: .01em; }
+.replay .ok { color: #2f6b3a; }
+.replay .no { color: var(--red); }
+.replay .replay-end { font-size: clamp(1.6rem, 2.6vw, 2.4rem); letter-spacing: -.03em; margin-top: 1.4rem; }
+.ai-line { margin-top: 1rem; font-size: clamp(1.1rem, 1.4vw, 1.3rem); color: var(--muted); }
+.contact-also { margin-top: 1.2rem; font-size: 1.15rem; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .replay-line { animation: 24s ease-in-out infinite; }
+  .replay-line:nth-child(1) { animation-name: replay1; }
+  .replay-line:nth-child(2) { animation-name: replay2; }
+  .replay-line:nth-child(3) { animation-name: replay3; }
+  .replay-line:nth-child(4) { animation-name: replay4; }
+  .replay-line:nth-child(5) { animation-name: replay5; }
+  .replay-line:nth-child(6) { animation-name: replay6; }
+}
+@keyframes replay1 { 0% { opacity: 0; } 3% { opacity: 1; } 95% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes replay2 { 0%, 12% { opacity: 0; } 15% { opacity: 1; } 95% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes replay3 { 0%, 25% { opacity: 0; } 28% { opacity: 1; } 95% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes replay4 { 0%, 41% { opacity: 0; } 44% { opacity: 1; } 95% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes replay5 { 0%, 58% { opacity: 0; } 61% { opacity: 1; } 95% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes replay6 { 0%, 75% { opacity: 0; } 78% { opacity: 1; } 95% { opacity: 1; } 100% { opacity: 0; } }
 
 @media (max-width: 760px) {
   .wrap { width: min(100% - 2rem, 90rem); }
