@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="t d">
+  <title id="t">ZLAR</title>
+  <desc id="d">The letter Z in red on paper white.</desc>
+  <rect width="64" height="64" fill="#fffefa"/>
+  <path d="M10 19h44L10 45h44" fill="none" stroke="#a62722" stroke-width="8"/>
+</svg>
