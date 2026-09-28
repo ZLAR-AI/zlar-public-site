@@ -105,6 +105,7 @@ p { max-width: 44rem; }
   display: flex; justify-content: space-between; gap: 2rem; align-items: start;
 }
 .footer-identity { font-size: 1.15rem; }
+.footer-updated { margin-top: .4rem; font: .85rem/1.4 Arial, Helvetica, sans-serif; color: var(--muted); }
 .footer-links { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; letter-spacing: 0; text-transform: none; font-size: .95rem; }
 .footer-links span[aria-hidden] { color: var(--red); }
 
